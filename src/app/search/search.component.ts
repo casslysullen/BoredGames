@@ -15,6 +15,13 @@ export class SearchComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  backButton() {
+
+  }
+
+  nextButton() {
+
+  }
 
 
 }
