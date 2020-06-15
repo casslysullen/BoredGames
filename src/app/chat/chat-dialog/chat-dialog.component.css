@@ -1,5 +1,5 @@
 .container {
-  background-image: url('../Images/search.png');
+  background-image: url('src/app/Images/search.png');
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
