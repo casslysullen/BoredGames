@@ -1,0 +1,19 @@
+.container{
+    background-image: url('../Images/search.png');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 767px){}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {}
+
+@media only screen and (min-width: 1024px) {}
