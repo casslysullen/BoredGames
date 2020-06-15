@@ -38,7 +38,7 @@ export class GameapiService {
   }
 
   searchEntries(term) {
-    const api = `${this.baseUrl}/search/?api_key=${this.API_KEY}&format=json&query=${term}&resources=game,image`;
+    const api = `${this.baseUrl}/search/?api_key=${this.API_KEY}&format=json&query=${term}&resources=game`;
     return this.http.get(api);
   }
 

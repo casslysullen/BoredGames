@@ -101,50 +101,52 @@ export class SearchComponent implements OnInit {
     })
 
 
-    this.getName();
-    // get routes
-    this.route.url.subscribe(params => {
-      this.routTo = params[0].path;
+    this.getName()
+    // this.route.url.subscribe(params => {
+    //   this.routTo = params[0].path;
 
-      switch (this.routTo) {
-        case 'characters':
-          //get characters
-          this.getCharacters();
-          break;
+    //   switch (this.routTo) {
+    //     case 'characters':
+    //       //get characters
+    //       this.getCharacters();
+    //       break;
 
-        case 'platform':
-          //get platform
-          this.getPlatform();
-          break;
+    //     case 'platform':
+    //       //get platform
+    //       this.getPlatform();
+    //       break;
 
-        case 'rating':
-          //get rating
-          this.getRating();
-          break;
+    //     case 'rating':
+    //       //get rating
+    //       this.getRating();
+    //       break;
 
-        case 'region':
-          //get region
-          this.getRegion();
-          break;
+    //     case 'region':
+    //       //get region
+    //       this.getRegion();
+    //       break;
 
-        // case 'reviews':
-        //   //get reviews
-        //   this.getReviews(score);
-        //   break;
+    //     // case 'reviews':
+    //     //   //get reviews
+    //     //   this.getReviews(score);
+    //     //   break;
 
-        case 'name':
-          //get name
-          this.getName();
-          break;
+    //     case 'name':
+    //       //get name
+    //       this.getName();
+    //       break;
 
-        default:
-          //route to home
+    //     default:
+    //       //route to home
 
-          break;
-      }
+    //       break;
+    //   };
 
-    });
-  }
+    // });
+
+  };
+  // // get routes
 
 }
+
 
