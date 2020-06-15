@@ -4,6 +4,10 @@
 
 export const environment = {
   production: false
+
+  dialogflow: {
+    angularBot: 'b10f2580848d4d088b3101ed7de37402'
+  }
 };
 
 /*
