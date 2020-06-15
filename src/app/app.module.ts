@@ -9,7 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { ResultsComponent } from './results/results.component';
-import { ChatDialogComponent } from './chat/chat-dialog/chat-dialog.component';
+// import { ChatDialogComponent } from './chat/chat-dialog/chat-dialog.component';
 
 
 @NgModule({
@@ -18,7 +18,7 @@ import { ChatDialogComponent } from './chat/chat-dialog/chat-dialog.component';
     MainComponent,
     SearchComponent,
     ResultsComponent,
-    ChatDialogComponent
+    // ChatDialogComponent
   ],
   imports: [
     BrowserModule,
