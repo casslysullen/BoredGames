@@ -1,33 +1,30 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
+import { ChatModule } from './chat/chat.module';
 import { SearchComponent } from './search/search.component';
-import { RouterModule, Routes } from '@angular/router';
 
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { ResultsComponent } from './results/results.component';
+import { ChatDialogComponent } from './chat/chat-dialog/chat-dialog.component';
 
-const routes: Routes = [
-  { path: '', component: MainComponent },
-  { path: 'johnny5', component: SearchComponent },
-  { path: 'johnny5/:results', component: ResultsComponent },
-]
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
     SearchComponent,
-    ResultsComponent
+    ResultsComponent,
+    ChatDialogComponent
   ],
   imports: [
     BrowserModule,
+    ChatModule,
     AppRoutingModule,
     HttpClientModule,
-    RouterModule.forRoot(routes),
   ],
   providers: [],
   bootstrap: [AppComponent]
