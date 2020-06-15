@@ -11,7 +11,8 @@
         placeholder="Search Games">
     </div>
     <section>
-      <div class="container">
+
+      <div>
         <ul *ngFor="let game of games.results | slice: 0:10">
           <li class="games">
             <h1>{{ game.name }}</h1>
