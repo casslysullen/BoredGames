@@ -1,10 +1,7 @@
-body {
-    margin: 0;
-    overflow: hidden;
-  }
 
 
-  canvas {
+
+canvas {
     background: #000;
     z-index: -5;
     position: relative;
@@ -12,6 +9,10 @@ body {
     
     
     
+  }
+
+  h1{
+    color: hotpink;
   }
  
 
