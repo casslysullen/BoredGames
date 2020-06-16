@@ -18,7 +18,7 @@ import { ResultsComponent } from './results/results.component';
     MainComponent,
     SearchComponent,
     ResultsComponent,
-    // ChatDialogComponent
+
   ],
   imports: [
     BrowserModule,
