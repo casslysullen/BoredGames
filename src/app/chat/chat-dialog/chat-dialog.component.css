@@ -1,5 +1,9 @@
 .container {
+<<<<<<< HEAD
   background-image: url('../../../assets/search.png');
+=======
+  background-image: url('src/app/Images/search.png');
+>>>>>>> e9cb63aa1c8d7942c23299013485a1ec47ce4756
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
