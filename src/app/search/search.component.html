@@ -1,9 +1,6 @@
 <div class="container">
   <p> CopyRights of BoredGames Inc</p>
-
-  <button routerLink="/johnny5/results">Results</button>
   <div>
-    <h1>Tron Grid</h1>
   </div>
   <main>
     <div class="search">
@@ -11,16 +8,18 @@
         placeholder="Search Games">
     </div>
     <section>
-
       <div>
-        <ul *ngFor="let game of games.results | slice: 0:10">
+        <ul *ngFor="let game of games?.results | slice: 0:10">
           <li class="games">
             <h1>{{ game.name }}</h1>
             <img class="" src="{{ game['image']['icon_url'] }}" />
-            <h1>{{ game.site_detail_url }}</h1>
-            <h1>{{ game.genres}} </h1>
+            <h1>{{ game?.site_detail_url }}</h1>
+            <h1>{{ game?.genres}} </h1>
           </li>
         </ul>
+      </div>
+      <div>
+        <app-chat-dialog></app-chat-dialog>
       </div>
     </section>
   </main>

@@ -1,11 +1,15 @@
 .container {
-<<<<<<< HEAD
   background-image: url('../../../assets/search.png');
-=======
-  background-image: url('src/app/Images/search.png');
->>>>>>> e9cb63aa1c8d7942c23299013485a1ec47ce4756
-  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  width: 200px;
+  height: 200px;
+}
+
+.bot {
+  background-color: red;
+  color: white;
+  width: 500px;
+  height: 500px;
 }

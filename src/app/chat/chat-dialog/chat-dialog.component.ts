@@ -20,6 +20,8 @@ export class ChatDialogComponent implements OnInit {
   ngOnInit(): void {
     this.messages = this.chat.conversation.asObservable()
       .scan((acc, val) => acc.concat(val));
+    console.log('chatbot start');
+
   }
 
   sendMessage() {

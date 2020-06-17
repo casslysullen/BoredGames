@@ -3,26 +3,19 @@ body {
   overflow: hidden;
 }
 
-
 canvas {
   background: #000;
   z-index: -5;
   position: relative;
 }
 
-
 iframe {
   display: none;
 }
 
 .StartButton {
-
-  position: fixed;
   z-index: 2;
-
 }
-
-
 
 @media only screen and (max-width: 767px) {}
 
