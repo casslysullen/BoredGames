@@ -1,13 +1,57 @@
+@import url(https://fonts.googleapis.com/css?family=VT323);
+
+
 .container {
-  background-image: url('../Images/search.png');
+  background-image: url('../../assets/search.png');
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+
+button{
+  background:rgb(207, 19, 192);
+  border-bottom: 6px inset rgba(0,0,0,.5);
+  border-left: 6px inset rgba(0,0,0,.5);
+  border-right: 6px inset rgba(255,255,255,.5);
+  border-top: 6px inset rgba(255,255,255,.5);
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 2.2rem;
+  margin: 1rem;
+  min-width: 200px;
+  padding: .5rem;
+  text-transform: uppercase;
+  width: auto;
+  font-family: 'VT323', monospace ;
+
+}
+
+.SearchButton:hover{
+  color: greenyellow;
+  box-shadow: 0 5px 15px rgb(207, 19, 192);
+}
+
+.form-control, .search-box, p{
+
+  font-family: 'VT323', monospace ;
+
+
+}
+
+input{
+  
+}
+
 h1{
     color: hotpink;
+}
+
+iframe {
+  display: none;
 }
 
 

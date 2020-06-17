@@ -1,7 +1,15 @@
 .container {
-  background-image: url('src/app/Images/search.png');
-  height: 100%;
+  background-image: url('../../../assets/search.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  width: 200px;
+  height: 200px;
+}
+
+.bot {
+  background-color: red;
+  color: white;
+  width: 500px;
+  height: 500px;
 }

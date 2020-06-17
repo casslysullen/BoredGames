@@ -1,16 +1,54 @@
-.container{
-    background-image: url('../Images/results.jpg');
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+@import url(https://fonts.googleapis.com/css?family=VT323);
+
+
+.container {
+  background-image: url('../../assets/results.jpg');
+  /*height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;*/
+  
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 1024px;
+    
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+    
+    /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+  
+  
+  
+}
+
+
+h1{
+  color: red;
+  font-family:'VT323', monospace ;
+  font-size: 25em;
+  text-align: center;
+
 }
 
 
 
 
 
-@media only screen and (max-width: 767px){}
+
+
+iframe {
+  display: none;
+}
+
+
+
+
+
+@media only screen and (max-width: 767px) {}
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {}
 
