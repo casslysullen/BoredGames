@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=VT323);
+
+
 .container {
   background-image: url('../../assets/search.png');
   height: 100%;
@@ -7,6 +10,52 @@
 }
 
 
+<<<<<<< HEAD
+=======
+button {
+  background: rgb(207, 19, 192);
+  border-bottom: 6px inset rgba(0, 0, 0, .5);
+  border-left: 6px inset rgba(0, 0, 0, .5);
+  border-right: 6px inset rgba(255, 255, 255, .5);
+  border-top: 6px inset rgba(255, 255, 255, .5);
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 2.2rem;
+  margin: 1rem;
+  min-width: 200px;
+  padding: .5rem;
+  text-transform: uppercase;
+  width: auto;
+  font-family: 'VT323', monospace;
+
+}
+
+.SearchButton:hover {
+  color: greenyellow;
+  box-shadow: 0 5px 15px rgb(207, 19, 192);
+}
+
+.form-control,
+.search-box,
+p {
+
+  font-family: 'VT323', monospace;
+
+
+}
+
+h1 {
+  color: hotpink;
+}
+
+iframe {
+  display: none;
+}
+
+
+>>>>>>> 6e68841ef91d779be4166216677e77e532396ca2
 @media only screen and (max-width: 767px) {}
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {}
