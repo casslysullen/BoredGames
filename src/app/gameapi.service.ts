@@ -18,7 +18,7 @@ export class GameapiService {
 
 
   getGame() {
-    const api = `${this.baseUrl}/game/?api_key=${this.API_KEY}&format=json&field_list=name,image`;
+    const api = `${this.baseUrl}/games/?api_key=${this.API_KEY}&format=json&field_list=name,image`;
     return this.http.get(api);
   }
 
@@ -43,7 +43,7 @@ export class GameapiService {
   }
 
   getName() {
-    const api = `${this.baseUrl}/game/?api_key=${this.API_KEY}&format=json&field_list=name,image`;
+    const api = `${this.baseUrl}/games/?api_key=${this.API_KEY}&format=json&fields=name`;
     return this.http.get(api);
   }
 
