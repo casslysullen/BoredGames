@@ -10,12 +10,12 @@
 }
 
 
-button{
-  background:rgb(207, 19, 192);
-  border-bottom: 6px inset rgba(0,0,0,.5);
-  border-left: 6px inset rgba(0,0,0,.5);
-  border-right: 6px inset rgba(255,255,255,.5);
-  border-top: 6px inset rgba(255,255,255,.5);
+button {
+  background: rgb(207, 19, 192);
+  border-bottom: 6px inset rgba(0, 0, 0, .5);
+  border-left: 6px inset rgba(0, 0, 0, .5);
+  border-right: 6px inset rgba(255, 255, 255, .5);
+  border-top: 6px inset rgba(255, 255, 255, .5);
   box-sizing: border-box;
   color: black;
   cursor: pointer;
@@ -26,40 +26,31 @@ button{
   padding: .5rem;
   text-transform: uppercase;
   width: auto;
-  font-family: 'VT323', monospace ;
+  font-family: 'VT323', monospace;
 
 }
 
-.SearchButton:hover{
+.SearchButton:hover {
   color: greenyellow;
   box-shadow: 0 5px 15px rgb(207, 19, 192);
 }
 
-.form-control, .search-box, p{
+.form-control,
+.search-box,
+p {
 
-  font-family: 'VT323', monospace ;
+  font-family: 'VT323', monospace;
 
 
 }
 
-input{
-  
-}
-
-h1{
-    color: hotpink;
+h1 {
+  color: hotpink;
 }
 
 iframe {
   display: none;
 }
-
-
-
-
-
-
-
 
 
 @media only screen and (max-width: 767px) {}

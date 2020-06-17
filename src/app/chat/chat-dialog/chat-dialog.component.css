@@ -1,16 +1,12 @@
-/* .container {
-  background-image: url('../../../assets/results.jpg');
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
-
 .bot {
   background-color: red;
   color: white;
   width: 500px;
   height: 500px;
+}
+
+message {
+  background-color: blue;
 }
 
 @media only screen and (max-width: 767px) {}
