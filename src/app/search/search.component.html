@@ -7,6 +7,9 @@
       <input type="text" (keyup)="searchTerms.next($event.target.value)" class="form-control search-box"
         placeholder="Search Games">
     </div>
+    <div>
+      <app-chat-dialog></app-chat-dialog>
+    </div>
     <section>
       <div>
         <ul *ngFor="let game of games?.results | slice: 0:10">
@@ -17,9 +20,6 @@
             <h1>{{ game?.genres}} </h1>
           </li>
         </ul>
-      </div>
-      <div>
-        <app-chat-dialog></app-chat-dialog>
       </div>
     </section>
   </main>
