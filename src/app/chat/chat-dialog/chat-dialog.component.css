@@ -1,11 +1,10 @@
-.container {
-  background-image: url('../../../assets/search.png');
+/* .container {
+  background-image: url('../../../assets/results.jpg');
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 200px;
-  height: 200px;
-}
+} */
 
 .bot {
   background-color: red;
@@ -13,3 +12,9 @@
   width: 500px;
   height: 500px;
 }
+
+@media only screen and (max-width: 767px) {}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {}
+
+@media only screen and (min-width: 1024px) {}
