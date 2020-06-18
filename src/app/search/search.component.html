@@ -1,8 +1,4 @@
 <div class="container">
-
-
-
-
   <div>
   </div>
   <main>
@@ -14,12 +10,12 @@
       <app-chat-dialog></app-chat-dialog>
     </div>
     <section>
-      <div>
+      <div class="game-container">
         <ul *ngFor="let game of games?.results | slice: 0:10">
           <li class="games">
             <h1>{{ game.name }}</h1>
             <img class="" src="{{ game['image']['icon_url'] }}" />
-            <div>{{ game?.site_detail_url }}</div>
+            <h1><a href="{{ game?.site_detail_url }}"> {{ game?.site_detail_url }}</a></h1>
             <div>{{ game?.genres}} </div>
           </li>
         </ul>

@@ -8,6 +8,7 @@
   background-size: cover;
 }
 
+
 button {
   background: rgb(207, 19, 192);
   border-bottom: 6px inset rgba(0, 0, 0, .5);
@@ -25,7 +26,6 @@ button {
   text-transform: uppercase;
   width: auto;
   font-family: 'VT323', monospace;
-
 }
 
 .SearchButton:hover {
@@ -36,10 +36,7 @@ button {
 .form-control,
 .search-box,
 p {
-
   font-family: 'VT323', monospace;
-
-
 }
 
 h1 {

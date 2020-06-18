@@ -4,13 +4,11 @@
   box-sizing: border-box;
 }
 
-
 h1 {
   font-size: 10em;
   font-family: 'VT323', monospace;
   color: rgb(207, 19, 192)
 }
-
 
 canvas {
   background: #000;
@@ -52,21 +50,12 @@ button {
   text-transform: uppercase;
   width: auto;
   font-family: 'VT323', monospace;
-
-
-
-
 }
 
 .StartButton:hover {
   color: greenyellow;
   box-shadow: 0 5px 15px rgb(207, 19, 192);
-
-
-
 }
-
-
 
 .bubble {
   position: relative;
@@ -80,17 +69,12 @@ button {
   text-align: center;
   color: #000;
   font-family: 'VT323', monospace;
-
 }
 
 p {
   font-family: 'VT323', monospace;
   color: rgb(207, 19, 192);
 }
-
-
-
-
 
 .bubble-bottom-left:before {
   content: "";

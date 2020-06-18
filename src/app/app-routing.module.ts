@@ -4,6 +4,7 @@ import { SearchComponent } from './search/search.component';
 import { MainComponent } from './main/main.component';
 
 
+
 const routes: Routes = [
   { path: '', component: MainComponent },
   { path: 'johnny5', component: SearchComponent },

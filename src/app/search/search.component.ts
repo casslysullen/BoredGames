@@ -1,8 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, NgModule } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { GameapiService } from '../gameapi.service';
 import { Subject } from 'rxjs/Subject';
-
 
 @Component({
   selector: 'app-search',

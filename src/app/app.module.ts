@@ -3,14 +3,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { ChatModule } from './chat/chat.module';
 import { SearchComponent } from './search/search.component';
+import { MatSliderModule } from '@angular/material/slider';
 
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
-
-// import { ChatDialogComponent } from './chat/chat-dialog/chat-dialog.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -24,6 +23,8 @@ import { MainComponent } from './main/main.component';
     ChatModule,
     AppRoutingModule,
     HttpClientModule,
+    BrowserAnimationsModule,
+    MatSliderModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
