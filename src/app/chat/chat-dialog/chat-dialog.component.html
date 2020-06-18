@@ -1,13 +1,18 @@
-<div class="bot">
-  <h1>Johnny 5</h1>
-  <ng-container *ngFor='let message of messages |async'>
-    <div class="message" [ngClass]="{'from': message.sentBy === 'bot',
+<h1 class="headline">Bored Games Search</h1>
+
+<img src="../../assets/Johnny5right.png" />
+
+<div class="container">
+  <div class="bot">
+    <ng-container *ngFor='let message of messages |async'>
+      <div class="message" [ngClass]="{'from': message.sentBy === 'bot',
       'to': message.sentBy === 'user'}">
-      {{message?.content}}
-    </div>
-  </ng-container>
+        {{message?.content}}
+      </div>
+    </ng-container>
 
-  <label for="nameField">Your Message</label>
+    <label for="nameField">Feed Johnny</label>
 
-  <input [(ngModel)]="formValue" (keyup.enter)="sendMessage()" type="text"><br>
+    <input [(ngModel)]="formValue" (keyup.enter)="sendMessage()" type="text"><br>
+  </div>
 </div>
