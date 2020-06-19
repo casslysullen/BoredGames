@@ -37,28 +37,32 @@ button{
   text-transform: uppercase;
   width: auto;
   font-family: 'VT323', monospace ;
+  margin-left: 42%;
+
 
 }
 
-.SearchButton:hover{
+.ResultButton:hover{
   color: greenyellow;
   box-shadow: 0 5px 15px rgb(207, 19, 192);
+  
+  
+  
+  
 }
 
 .form-control, .search-box, p{
 
   font-family: 'VT323', monospace ;
-
-
+  padding: 20px;
+  width: 30%;
+  font-size: xx-large;
+  background-color: black;
+  color:greenyellow;
+  margin-top: 1%;
+  border-radius: 40px;
 }
 
-input{
-  
-}
-
-h1{
-    color: hotpink;
-}
 
 iframe {
   display: none;

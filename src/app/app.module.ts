@@ -8,6 +8,7 @@ import { SearchComponent } from './search/search.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
+import { ResultsComponent } from './results/results.component';
 
 // import { ChatDialogComponent } from './chat/chat-dialog/chat-dialog.component';
 
@@ -17,6 +18,7 @@ import { MainComponent } from './main/main.component';
     AppComponent,
     MainComponent,
     SearchComponent,
+    ResultsComponent,
 
   ],
   imports: [

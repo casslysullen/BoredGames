@@ -3,10 +3,9 @@
 
 h1{
   font-family: 'VT323', monospace ;
-  margin-bottom: 20%;
-  margin-left: 35%;
   color: greenyellow;
   font-size: 5em;
+  text-align: center;
   
 }
 
@@ -15,14 +14,10 @@ label{
   font-size: 3em;
 }
 
-.bot{
-color: yellow;
-
-}
 
 .message {
   font-family: 'VT323', monospace;
-  color: yellowgreen;
+  color: black;
   position: relative;
   line-height: 24px;
   width: 300px;
@@ -32,17 +27,48 @@ color: yellow;
   text-align: center;
   opacity: 0.8;
   font-size:1.2em;
+  font-size: x-large;
+  margin-left: 38%;
+  
  
 }
 
 img{
-  float: right;
-  animation: fadeIn ease 10s;
-  -webkit-animation: fadeIn ease 10s;
-  -moz-animation: fadeIn ease 10s;
-  -o-animation: fadeIn ease 10s;
-  -ms-animation: fadeIn ease 10s;
+  position: absolute;
+  right: -800px;
+  animation: slideMedia 2s 1s forwards;
+
 }
+
+.Bot{
+  background-color: black;
+  width: 25%;
+  font-family: 'VT323', monospace ;
+  padding: 20px;
+  color:greenyellow;
+  font-size: xx-large;
+  border-radius: 40px;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  align-content: center;
+
+}
+
+@keyframes slideMedia {
+  0% {
+    right: -200px;
+    opacity: 0;
+  }
+  100% {
+    right: -10px;
+    opacity: 1;
+  }
+}
+
+
+
+
 
 @media only screen and (max-width: 767px) {}
 
