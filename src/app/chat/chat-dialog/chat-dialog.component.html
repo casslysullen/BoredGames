@@ -5,7 +5,7 @@
 
 <div class="container">
    
-    <ng-container *ngFor='let message of messages |async'>
+    <ng-container *ngFor='let message of messages'>
       <div class="message" [ngClass]="{'from': message.sentBy === 'bot',
       'to': message.sentBy === 'user'}">
         {{message?.content}}
@@ -15,5 +15,5 @@
 
 </div>
 
-<input class="Bot" placeholder="Say Hello To Johnny" [(ngModel)]="formValue" (keyup.enter)="sendMessage()" type="text"><br>
+<input class="Bot" placeholder="Type 'Hello' To Johnny" [(ngModel)]="formValue" (keyup.enter)="sendMessage()" type="text"><br>
 

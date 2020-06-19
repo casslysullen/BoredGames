@@ -2,6 +2,7 @@
   <div>
       
   </div>
+
   <main>
     <div class="search">
       <input type="text" (keyup)="searchTerms.next($event.target.value)" class="form-control search-box"
@@ -10,7 +11,9 @@
     <div>
       <app-chat-dialog></app-chat-dialog>
     </div>
-    <button class="ResultButton" routerLink='johnny5/results'>Results</button>
+    <button class="ResultButton" routerLink="results">Results</button>
+
+
     <section>
       <div>
         <ul *ngFor="let game of games?.results | slice: 0:10">

@@ -12,16 +12,19 @@ import 'rxjs/add/operator/scan';
 })
 export class ChatDialogComponent implements OnInit {
 
-  messages: Observable<Message[]>;
+  messages: any[];
   formValue: string;
 
   constructor(private chat: ChatService) { }
 
   ngOnInit(): void {
-    this.messages = this.chat.conversation.asObservable()
+    const message = this.chat.conversation.asObservable()
       .scan((acc, val) => acc.concat(val));
     console.log('chatbot start');
-
+    message.subscribe((msg) => {
+      console.log('msg', msg)
+      this.messages = msg.filter((mes, idx) => idx === msg.length - 1)
+    })
   }
 
   sendMessage() {

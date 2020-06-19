@@ -15,3 +15,7 @@ body{
     top: 0;
     left: 0;
 }
+
+iframe{
+    display: hidden;
+}

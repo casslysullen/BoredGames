@@ -3,12 +3,12 @@ import { Routes, RouterModule } from '@angular/router';
 import { SearchComponent } from './search/search.component';
 import { MainComponent } from './main/main.component';
 import { ResultsComponent } from './results/results.component';
-
+  
 
 const routes: Routes = [
   { path: '', component: MainComponent },
   { path: 'johnny5', component: SearchComponent },
-  { path: 'johnny5/results', component: ResultsComponent },
+  { path: 'johnny5/results', component: ResultsComponent }
 
 ];
 
