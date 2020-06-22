@@ -29,9 +29,9 @@ label{
   font-size:1.2em;
   font-size: x-large;
   margin-left: 38%;
-  
- 
 }
+
+
 
 img{
   position: absolute;
@@ -52,6 +52,7 @@ img{
   text-align: center;
   display: flex;
   align-content: center;
+  margin-top: 2%;
 
 }
 
@@ -63,6 +64,28 @@ img{
   100% {
     right: -10px;
     opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+      transform: translate3d(0,40px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+      transform: translate3d(0,40px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
   }
 }
 

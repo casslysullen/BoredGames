@@ -51,7 +51,7 @@ button{
   
 }
 
-.form-control, .search-box, p{
+/*.form-control, .search-box, p{
 
   font-family: 'VT323', monospace ;
   padding: 20px;
@@ -61,7 +61,7 @@ button{
   color:greenyellow;
   margin-top: 1%;
   border-radius: 40px;
-}
+}*/
 
 
 iframe {

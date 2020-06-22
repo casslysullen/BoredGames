@@ -9,6 +9,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { ResultsComponent } from './results/results.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 // import { ChatDialogComponent } from './chat/chat-dialog/chat-dialog.component';
 
@@ -19,6 +21,7 @@ import { ResultsComponent } from './results/results.component';
     MainComponent,
     SearchComponent,
     ResultsComponent,
+    
 
   ],
   imports: [
@@ -26,6 +29,7 @@ import { ResultsComponent } from './results/results.component';
     ChatModule,
     AppRoutingModule,
     HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
