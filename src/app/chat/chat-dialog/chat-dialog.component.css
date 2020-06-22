@@ -1,7 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=VT323);
 
 
-<<<<<<< HEAD
 h1 {
   font-family: 'VT323', monospace;
   margin-bottom: 20%;
@@ -9,14 +8,6 @@ h1 {
   color: greenyellow;
   font-size: 5em;
 
-=======
-h1{
-  font-family: 'VT323', monospace ;
-  color: greenyellow;
-  font-size: 5em;
-  text-align: center;
-  
->>>>>>> origin/quita
 }
 
 label {
@@ -24,13 +15,6 @@ label {
   font-size: 3em;
 }
 
-<<<<<<< HEAD
-.bot {
-  color: yellow;
-
-}
-=======
->>>>>>> origin/quita
 
 .message {
   font-family: 'VT323', monospace;
@@ -43,39 +27,26 @@ label {
   padding: 24px;
   text-align: center;
   opacity: 0.8;
-<<<<<<< HEAD
   font-size: 1.2em;
-
-}
-
-img {
-  float: right;
-  animation: fadeIn ease 10s;
-  -webkit-animation: fadeIn ease 10s;
-  -moz-animation: fadeIn ease 10s;
-  -o-animation: fadeIn ease 10s;
-  -ms-animation: fadeIn ease 10s;
-=======
-  font-size:1.2em;
   font-size: x-large;
   margin-left: 38%;
 }
 
 
 
-img{
+img {
   position: absolute;
   right: -800px;
   animation: slideMedia 2s 1s forwards;
 
 }
 
-.Bot{
+.Bot {
   background-color: black;
   width: 25%;
-  font-family: 'VT323', monospace ;
+  font-family: 'VT323', monospace;
   padding: 20px;
-  color:greenyellow;
+  color: greenyellow;
   font-size: xx-large;
   border-radius: 40px;
   margin: auto;
@@ -84,7 +55,6 @@ img{
   align-content: center;
   margin-top: 2%;
 
->>>>>>> origin/quita
 }
 
 @keyframes slideMedia {
@@ -92,6 +62,7 @@ img{
     right: -200px;
     opacity: 0;
   }
+
   100% {
     right: -10px;
     opacity: 1;
@@ -100,23 +71,23 @@ img{
 
 @keyframes fadeInUp {
   from {
-      transform: translate3d(0,40px,0)
+    transform: translate3d(0, 40px, 0)
   }
 
   to {
-      transform: translate3d(0,0,0);
-      opacity: 1
+    transform: translate3d(0, 0, 0);
+    opacity: 1
   }
 }
 
 @-webkit-keyframes fadeInUp {
   from {
-      transform: translate3d(0,40px,0)
+    transform: translate3d(0, 40px, 0)
   }
 
   to {
-      transform: translate3d(0,0,0);
-      opacity: 1
+    transform: translate3d(0, 0, 0);
+    opacity: 1
   }
 }
 
