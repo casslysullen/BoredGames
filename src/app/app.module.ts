@@ -6,7 +6,6 @@ import { SearchComponent } from './search/search.component';
 import { MatSliderModule } from '@angular/material/slider';
 
 
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';

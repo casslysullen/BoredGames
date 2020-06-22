@@ -71,6 +71,11 @@ export class GameapiService {
     const api = `${this.baseUrl}/regions/?api_key=${this.API_KEY}&format=json&field_list=name`;
     return this.http.get(api);
   }
+
+  testDialogflow() {
+    console.log('test dialogflow called');
+    return this.http.get('/api/')
+  }
 }
 
 
