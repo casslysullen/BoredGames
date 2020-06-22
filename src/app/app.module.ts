@@ -9,16 +9,12 @@ import { MatSliderModule } from '@angular/material/slider';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
-<<<<<<< HEAD
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-=======
 import { ResultsComponent } from './results/results.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 // import { ChatDialogComponent } from './chat/chat-dialog/chat-dialog.component';
 
->>>>>>> origin/quita
 
 @NgModule({
   declarations: [
@@ -26,7 +22,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MainComponent,
     SearchComponent,
     ResultsComponent,
-    
+
 
   ],
   imports: [
@@ -34,12 +30,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ChatModule,
     AppRoutingModule,
     HttpClientModule,
-<<<<<<< HEAD
-    BrowserAnimationsModule,
-    MatSliderModule,
-=======
     BrowserAnimationsModule
->>>>>>> origin/quita
   ],
   providers: [],
   bootstrap: [AppComponent]

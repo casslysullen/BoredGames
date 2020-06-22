@@ -3,7 +3,6 @@ body {
   height: 100vh;
 }
 
-
 router-outlet~* {
   position: absolute;
   height: 100%;
