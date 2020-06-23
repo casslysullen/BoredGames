@@ -63,6 +63,21 @@ h1 {
   padding: 70px;
 }
 
+button {
+  background: rgb(207, 19, 192);
+  border-bottom: 6px inset rgba(0, 0, 0, .5);
+  border-left: 6px inset rgba(0, 0, 0, .5);
+  border-right: 6px inset rgba(255, 255, 255, .5);
+  border-top: 6px inset rgba(255, 255, 255, .5);
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 1.25rem;
+  min-width: 175px;
+  padding: .25rem;
+  text-transform: uppercase;
+  font-family: 'VT323', monospace;
+  color: greenyellow;
+}
 
 iframe {
   display: hidden;
