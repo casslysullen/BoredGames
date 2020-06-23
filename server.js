@@ -10,7 +10,7 @@ app.use(express.json());
 
 const dialogflow = require('dialogflow');
 const uuid = require('uuid');
-const projectId = 'b10f2580848d4d088b3101ed7de37402';
+const projectId = 'boredgames-eonagp';
 /**
  * Send a query to the dialogflow agent, and return the query result.
  * @param {string} projectId The project to be used
@@ -48,12 +48,12 @@ async function runSample(projectId) {
     console.log(`  No intent matched.`);
   }
 }
-app.get("*", (req, res) => {
-  console.log('server.js');
+app.get("/", (req, res) => {
+  console.log('request sent to server');
 
-  runSample(projectId).then((res) => {
-    console.log('response from dialogflow', res);
-  })
+  // runSample(projectId).then((res) => {
+  //   console.log('response from dialogflow', res);
+  // })
   res.json('hi from server.js');
 });
 

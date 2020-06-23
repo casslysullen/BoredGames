@@ -74,7 +74,7 @@ export class GameapiService {
 
   testDialogflow() {
     console.log('test dialogflow called');
-    return this.http.get('/api/')
+    return this.http.get('/api')
   }
 }
 

@@ -32,15 +32,6 @@ label {
   margin-left: 38%;
 }
 
-
-
-img {
-  position: absolute;
-  right: -800px;
-  animation: slideMedia 2s 1s forwards;
-
-}
-
 .Bot {
   background-color: black;
   width: 25%;
@@ -55,18 +46,6 @@ img {
   align-content: center;
   margin-top: 2%;
 
-}
-
-@keyframes slideMedia {
-  0% {
-    right: -200px;
-    opacity: 0;
-  }
-
-  100% {
-    right: -10px;
-    opacity: 1;
-  }
 }
 
 @keyframes fadeInUp {
@@ -95,7 +74,36 @@ img {
 
 
 
-@media only screen and (max-width: 767px) {}
+@media only screen and (max-width: 767px) {
+  h1 {
+    font-family: 'VT323', monospace;
+    color: greenyellow;
+    font-size: 35px;
+    margin-left: 14%;
+    margin-top: 50px;
+  }
+
+  .Bot {
+    background-color: black;
+    width: 55%;
+    font-family: 'VT323', monospace;
+    padding: 15px;
+    color: greenyellow;
+    font-size: large;
+    border-radius: 40px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    align-content: center;
+    margin-top: 2%;
+  }
+
+  img {
+    position: bottom;
+    max-width: 50%;
+    margin-top: 50%;
+  }
+}
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {}
 

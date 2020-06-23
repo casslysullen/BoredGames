@@ -1,34 +1,30 @@
-<div class="container">
-  <div>
+<main>
+  <div class="container">
+    <button routerLink=''>Home</button>
+    <h1 class="headline">Bored Games Search</h1>
 
-  </div>
-
-  <main>
-    <!-- <div class="search"> -->
-    <!-- <input type="text" (keyup)="searchTerms.next($event.target.value)" class="form-control search-box" -->
-    <!-- placeholder="Search Games"> -->
-    <!-- </div> -->
-    <div>
-      <app-chat-dialog></app-chat-dialog>
+    <div class="search">
+      <input type="text" (keyup)="searchTerms.next($event.target.value)" class="searchBar" placeholder="Search Games">
     </div>
-    <button class="ResultButton" routerLink="results">Results</button>
-
+    <div>
+      <img class="johnny5" src="../../assets/Johnny5right.png" />
+    </div>
 
     <section>
       <div class="game-container">
-        <ul *ngFor="let game of games?.results | slice: 0:10">
-          <li class="games">
-            <h1>{{ game.name }}</h1>
-            <img class="" src="{{ game['image']['icon_url'] }}" />
-            <h1><a href="{{ game?.site_detail_url }}"> {{ game?.site_detail_url }}</a></h1>
-            <div>{{ game?.genres}} </div>
-          </li>
-        </ul>
+        <mat-card *ngFor="let game of games?.results | slice: 0:10">
+          <mat-card-header>
+            <mat-card-title>
+              {{game.name}}
+            </mat-card-title>
+          </mat-card-header>
+          <img class="card-image" mat-card-image src="{{ game['image']['small_url'] }}" />
+          <button mat-button><a href="{{ game?.site_detail_url }}">More Details</a></button>
+        </mat-card>
       </div>
-
     </section>
-  </main>
-</div>
+  </div>
+</main>
 
 <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
   src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/205590828&color=%23ff00f5&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
