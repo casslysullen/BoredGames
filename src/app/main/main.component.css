@@ -18,35 +18,12 @@ img {
   animation-delay: 2s;
   position: absolute;
   left: -500px;
+  padding-top: 200px;
 }
 
-.ResultButton:hover {
+button:hover {
   color: greenyellow;
   box-shadow: 0 5px 15px rgb(207, 19, 192);
-}
-
-canvas {
-  background: #000;
-  position: relative;
-  z-index: -1;
-
-
-  /* Set rules to fill background */
-  min-height: 100%;
-  min-width: 1024px;
-
-  /* Set up proportionate scaling */
-  width: 100%;
-  height: auto;
-
-  /* Set up positioning */
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
-iframe {
-  display: none;
 }
 
 button {
@@ -66,18 +43,35 @@ button {
   text-transform: uppercase;
   width: auto;
   font-family: 'VT323', monospace;
-  position: absolute;
-  right: 0;
 }
 
-.StartButton:hover {
-  color: greenyellow;
-  box-shadow: 0 5px 15px rgb(207, 19, 192);
+.buttons {
+  display: flex;
+  justify-content: center;
 }
+
+canvas {
+  background: #000;
+  position: relative;
+  z-index: -1;
+
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 
 .bubble {
   position: relative;
-  font-family: sans-serif;
   font-size: 24px;
   line-height: 24px;
   width: 300px;
@@ -87,7 +81,8 @@ button {
   text-align: center;
   color: #000;
   font-family: 'VT323', monospace;
-  margin-left: 30%;
+  margin-left: 360px;
+  margin-top: 150px;
   animation-duration: 5s;
   animation-fill-mode: both;
   -webkit-animation-duration: 5s;
@@ -96,17 +91,7 @@ button {
   animation-name: fadeInUp;
   -webkit-animation-name: fadeInUp;
   animation-delay: 4s;
-  padding: 20px;
-
 }
-
-footer {
-  font-family: 'VT323', monospace;
-  color: rgb(207, 19, 192);
-  position: fixed;
-  bottom: 0;
-}
-
 
 .bubble-bottom-left:before {
   content: "";
@@ -121,7 +106,17 @@ footer {
   bottom: -24px;
 }
 
+footer {
+  font-family: 'VT323', monospace;
+  color: rgb(207, 19, 192);
+  position: fixed;
+  bottom: 0;
+}
 
+
+iframe {
+  display: none;
+}
 
 @-webkit-keyframes slide {
   100% {

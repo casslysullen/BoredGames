@@ -14,13 +14,6 @@ main {
   background-color: darkblue;
 }
 
-/* .container {
-  
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
-
 a {
   text-decoration: none;
   color: greenyellow;
@@ -40,6 +33,7 @@ a {
   right: -800px;
   animation: slideMedia 2s 1s forwards;
   z-index: 2;
+  padding-top: 100px;
 }
 
 .game-container {
