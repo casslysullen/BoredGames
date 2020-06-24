@@ -1,15 +1,16 @@
 @import url(https://fonts.googleapis.com/css?family=VT323);
 
 
-h1{
-  font-family: 'VT323', monospace ;
+h1 {
+  font-family: 'VT323', monospace;
+  margin-bottom: 20%;
+  margin-left: 35%;
   color: greenyellow;
   font-size: 5em;
-  text-align: center;
-  
+
 }
 
-label{
+label {
   font-family: 'VT323', monospace;
   font-size: 3em;
 }
@@ -21,31 +22,22 @@ label{
   position: relative;
   line-height: 24px;
   width: 300px;
-  background:hotpink;
+  background: hotpink;
   border-radius: 40px;
   padding: 24px;
   text-align: center;
   opacity: 0.8;
-  font-size:1.2em;
+  font-size: 1.2em;
   font-size: x-large;
   margin-left: 38%;
 }
 
-
-
-img{
-  position: absolute;
-  right: -800px;
-  animation: slideMedia 2s 1s forwards;
-
-}
-
-.Bot{
+.Bot {
   background-color: black;
   width: 25%;
-  font-family: 'VT323', monospace ;
+  font-family: 'VT323', monospace;
   padding: 20px;
-  color:greenyellow;
+  color: greenyellow;
   font-size: xx-large;
   border-radius: 40px;
   margin: auto;
@@ -56,36 +48,25 @@ img{
 
 }
 
-@keyframes slideMedia {
-  0% {
-    right: -200px;
-    opacity: 0;
-  }
-  100% {
-    right: -10px;
-    opacity: 1;
-  }
-}
-
 @keyframes fadeInUp {
   from {
-      transform: translate3d(0,40px,0)
+    transform: translate3d(0, 40px, 0)
   }
 
   to {
-      transform: translate3d(0,0,0);
-      opacity: 1
+    transform: translate3d(0, 0, 0);
+    opacity: 1
   }
 }
 
 @-webkit-keyframes fadeInUp {
   from {
-      transform: translate3d(0,40px,0)
+    transform: translate3d(0, 40px, 0)
   }
 
   to {
-      transform: translate3d(0,0,0);
-      opacity: 1
+    transform: translate3d(0, 0, 0);
+    opacity: 1
   }
 }
 
@@ -93,7 +74,36 @@ img{
 
 
 
-@media only screen and (max-width: 767px) {}
+@media only screen and (max-width: 767px) {
+  h1 {
+    font-family: 'VT323', monospace;
+    color: greenyellow;
+    font-size: 35px;
+    margin-left: 14%;
+    margin-top: 50px;
+  }
+
+  .Bot {
+    background-color: black;
+    width: 55%;
+    font-family: 'VT323', monospace;
+    padding: 15px;
+    color: greenyellow;
+    font-size: large;
+    border-radius: 40px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    align-content: center;
+    margin-top: 2%;
+  }
+
+  img {
+    position: bottom;
+    max-width: 50%;
+    margin-top: 50%;
+  }
+}
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {}
 

@@ -1,82 +1,121 @@
 @import url(https://fonts.googleapis.com/css?family=VT323);
 
-    #background {
-        background: black url('../../assets/background.png') repeat 5% 5%;
-        position: absolute;
-        top: 0; left: 0; right: 0; bottom: 0;
-        z-index: 100;
-        
-        animation-name: STAR-MOVE;
-        animation-duration: 200s;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-    }
-    
-    #midground {
-        background: url('../../assets/midground.png') repeat 20% 20%;
-        position: absolute;
-        top: 0; left: 0; right: 0; bottom: 0;
-        z-index: 200;
-        
-        animation-name: STAR-MOVE;
-        animation-duration: 150s;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-    }
-    
-    #foreground {
-        background: url('../../assets/foreground.png') repeat 35% 35%;
-        position: absolute;
-        top: 0; left: 0; right: 0; bottom: 0;
-        z-index: 300;
-        
-        animation-name: STAR-MOVE;
-        animation-duration: 100s;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-    }
+#background {
+  background: black url('../../assets/background.png') repeat 5% 5%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
 
-    #content{
-        width: 1000px;
-        margin: 0 auto;
-        position: relative;
-        z-index: 300;
-        background: rgba(0,0,0,0.7);
-        overflow: hidden;
-        padding: 30px 50px;
-        color:yellowgreen;
-        font-family:'VT323', monospace ;
-        font-size: xx-large;
-    }
+  animation-name: STAR-MOVE;
+  animation-duration: 200s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
 
-    h1{
-        display: inline;
-        padding: 70px;
-    }
-   
+#midground {
+  background: url('../../assets/midground.png') repeat 20% 20%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 200;
 
+  animation-name: STAR-MOVE;
+  animation-duration: 150s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
 
+#foreground {
+  background: url('../../assets/foreground.png') repeat 35% 35%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 300;
 
-    
-  
-  
+  animation-name: STAR-MOVE;
+  animation-duration: 100s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
 
-iframe{
-    display: hidden;
+#content {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 300;
+  background: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  padding: 30px 50px;
+  color: yellowgreen;
+  font-family: 'VT323', monospace;
+  font-size: xx-large;
+}
+
+h1 {
+  display: inline;
+  padding: 70px;
+}
+
+button {
+  background: rgb(207, 19, 192);
+  border-bottom: 6px inset rgba(0, 0, 0, .5);
+  border-left: 6px inset rgba(0, 0, 0, .5);
+  border-right: 6px inset rgba(255, 255, 255, .5);
+  border-top: 6px inset rgba(255, 255, 255, .5);
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 1.25rem;
+  min-width: 175px;
+  padding: .25rem;
+  text-transform: uppercase;
+  font-family: 'VT323', monospace;
+  color: greenyellow;
+}
+
+iframe {
+  display: hidden;
 }
 
 @keyframes STAR-MOVE {
-	from {
-		background-position: 5% 5%
-	}
-	to { 
-		background-position: 1300% 600%
-	}
+  from {
+    background-position: 5% 5%
+  }
+
+  to {
+    background-position: 1300% 600%
+  }
 }
 
+@media only screen and (max-width: 767px) {
+  #background {
+    background: black url('../../assets/background.png') repeat 5% 5%;
+    position: absolute;
+  }
 
-@media only screen and (max-width: 767px) {}
+  h1 {
+    padding: 0 10px;
+    display: list-item;
+    list-style-type: none;
+    font-family: VT323;
+  }
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) {}
-
-@media only screen and (min-width: 1280px) {}
+  #content {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 300;
+    background: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    padding: 30px 50px;
+    color: yellowgreen;
+    font-family: 'VT323', monospace;
+    font-size: xx-large;
+  }
+}

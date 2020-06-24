@@ -1,13 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=VT323);
 
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-
-h1 { font-size: 10em;
-     font-family: 'VT323', monospace ;
-     color:rgb(207, 19, 192);
+h1 {
+  font-size: 10em;
+  font-family: 'VT323', monospace;
+  color: rgb(207, 19, 192);
+  padding-top: 30px;
 }
 
 img {
@@ -17,76 +18,71 @@ img {
   animation-delay: 2s;
   position: absolute;
   left: -500px;
+  padding-top: 200px;
 }
 
+button:hover {
+  color: greenyellow;
+  box-shadow: 0 5px 15px rgb(207, 19, 192);
+}
 
+button {
+  background: rgb(207, 19, 192);
+  border-bottom: 6px inset rgba(0, 0, 0, .5);
+  border-left: 6px inset rgba(0, 0, 0, .5);
+  border-right: 6px inset rgba(255, 255, 255, .5);
+  border-top: 6px inset rgba(255, 255, 255, .5);
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 2.2rem;
+  margin: 1rem;
+  min-width: 200px;
+  padding: .5rem;
+  text-transform: uppercase;
+  width: auto;
+  font-family: 'VT323', monospace;
+}
 
+.buttons {
+  display: flex;
+  justify-content: center;
+}
 
 canvas {
   background: #000;
   position: relative;
   z-index: -1;
- 
 
   /* Set rules to fill background */
   min-height: 100%;
   min-width: 1024px;
-  
+
   /* Set up proportionate scaling */
   width: 100%;
   height: auto;
-  
+
   /* Set up positioning */
   position: fixed;
   top: 0;
   left: 0;
 }
 
-iframe {
-  display: none;
-}
-
-button{
-    background:rgb(207, 19, 192);
-    border-bottom: 6px inset rgba(0,0,0,.5);
-    border-left: 6px inset rgba(0,0,0,.5);
-    border-right: 6px inset rgba(255,255,255,.5);
-    border-top: 6px inset rgba(255,255,255,.5);
-    box-sizing: border-box;
-    color: black;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 2.2rem;
-    margin: 1rem;
-    min-width: 200px;
-    padding: .5rem;
-    text-transform: uppercase;
-    width: auto;
-    font-family: 'VT323', monospace;
-    position: absolute;
-    right: 0;
-}
-
-.StartButton:hover{
-  color: greenyellow;
-  box-shadow: 0 5px 15px rgb(207, 19, 192);
-}
-
-
 
 .bubble {
   position: relative;
-  font-family: sans-serif;
   font-size: 24px;
   line-height: 24px;
   width: 300px;
-  background:rgb(207, 19, 192);
+  background: rgb(207, 19, 192);
   border-radius: 40px;
   padding: 24px;
   text-align: center;
   color: #000;
-  font-family: 'VT323', monospace ;
-  margin-left: 30%;
+  font-family: 'VT323', monospace;
+  margin-left: 360px;
+  margin-top: 150px;
   animation-duration: 5s;
   animation-fill-mode: both;
   -webkit-animation-duration: 5s;
@@ -95,17 +91,7 @@ button{
   animation-name: fadeInUp;
   -webkit-animation-name: fadeInUp;
   animation-delay: 4s;
-  padding: 20px;
-  
- }
-
-footer{
-  font-family: 'VT323', monospace ;
-  color: rgb(207, 19, 192);
-  position: fixed;
-  bottom:0;
- }
-
+}
 
 .bubble-bottom-left:before {
   content: "";
@@ -120,92 +106,107 @@ footer{
   bottom: -24px;
 }
 
+footer {
+  font-family: 'VT323', monospace;
+  color: rgb(207, 19, 192);
+  position: fixed;
+  bottom: 0;
+}
 
+
+iframe {
+  display: none;
+}
 
 @-webkit-keyframes slide {
-  100% { left: 0; }
+  100% {
+    left: 0;
+  }
 }
 
 @keyframes slide {
-  100% { left: -10px; }
+  100% {
+    left: -10px;
+  }
 }
 
 @keyframes fadeInUp {
   from {
-      transform: translate3d(0,40px,0)
+    transform: translate3d(0, 40px, 0)
   }
 
   to {
-      transform: translate3d(0,0,0);
-      opacity: 1
+    transform: translate3d(0, 0, 0);
+    opacity: 1
   }
 }
 
 @-webkit-keyframes fadeInUp {
   from {
-      transform: translate3d(0,40px,0)
+    transform: translate3d(0, 40px, 0)
   }
 
   to {
-      transform: translate3d(0,0,0);
-      opacity: 1
+    transform: translate3d(0, 0, 0);
+    opacity: 1
   }
 }
 
 
 @media only screen and (max-width: 767px) {
-
   h1 {
     font-size: 30px;
     font-family: 'VT323', monospace;
     color: rgb(207, 19, 192);
   }
-button {
-  background: rgb(207, 19, 192);
-  border-bottom: 6px inset rgba(0, 0, 0, .5);
-  border-left: 6px inset rgba(0, 0, 0, .5);
-  border-right: 6px inset rgba(255, 255, 255, .5);
-  border-top: px inset rgba(255, 255, 255, .5);
-  box-sizing: border-box;
-  color: black;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 2.2rem;
-  margin: 1rem;
-  min-width: 30px;
-  padding: .5rem;
-  text-transform: uppercase;
-  width: auto;
-  font-family: 'VT323', monospace;
-  position: fixed;
-  right: 0;
-  top: 400px;
-}
-.bubble {
-  font-family: sans-serif;
-  font-size: 15px;
-  line-height: 22px;
-  width: 150px;
-  background: rgb(207, 19, 192);
-  border-radius: 37px;
-  top: 5px;
-  text-align: center;
-  color: #000;
-  font-family: 'VT323', monospace;
-  margin-left: 30%;
-  animation-duration: 5s;
-  animation-fill-mode: both;
-  -webkit-animation-duration: 5s;
-  -webkit-animation-fill-mode: both;
-  opacity: 0;
-  animation-name: fadeInUp;
-  -webkit-animation-name: fadeInUp;
-  animation-delay: 4s;
-  padding: 20px;
-  margin-top: 50%;
+
+  button {
+    background: rgb(207, 19, 192);
+    border-bottom: 6px inset rgba(0, 0, 0, .5);
+    border-left: 6px inset rgba(0, 0, 0, .5);
+    border-right: 6px inset rgba(255, 255, 255, .5);
+    border-top: px inset rgba(255, 255, 255, .5);
+    box-sizing: border-box;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 2.2rem;
+    margin: 1rem;
+    min-width: 30px;
+    padding: .5rem;
+    text-transform: uppercase;
+    width: auto;
+    font-family: 'VT323', monospace;
+    position: fixed;
+    right: 0;
+    top: 400px;
+  }
+
+  .bubble {
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    width: 150px;
+    background: rgb(207, 19, 192);
+    border-radius: 37px;
+    top: 5px;
+    text-align: center;
+    color: #000;
+    font-family: 'VT323', monospace;
+    margin-left: 30%;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+    animation-delay: 4s;
+    padding: 20px;
+    margin-top: 50%;
+  }
 }
 
-}
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {}
 

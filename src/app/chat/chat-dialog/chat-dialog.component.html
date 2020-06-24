@@ -1,21 +1,14 @@
-<h1 class="headline">Bored Games Search</h1>
-<div>
-<img src="../../assets/Johnny5right.png"/> 
-</div>
-
-
-
 <div class="container">
-   
-    <ng-container *ngFor='let message of messages'>
-      <div class="message" [ngClass]="{'from': message.sentBy === 'bot',
-      'to': message.sentBy === 'user'}">
-        {{message?.content}}
-      </div>
 
-    </ng-container>
+  <ng-container *ngFor='let message of messages'>
+    <div class="message" [ngClass]="{'from': message.sentBy === 'bot',
+      'to': message.sentBy === 'user'}">
+      {{message?.content}}
+    </div>
+
+  </ng-container>
 
 </div>
 
-<input class="Bot" placeholder="Type 'Hello' To Johnny" [(ngModel)]="formValue" (keyup.enter)="sendMessage()" type="text"><br>
-
+<input class="Bot" placeholder="Type 'Hello' To Johnny" [(ngModel)]="formValue" (keyup.enter)="sendMessage()"
+  type="text"><br>

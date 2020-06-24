@@ -1,22 +1,28 @@
 import { Component, OnInit } from '@angular/core';
-
+import { GameapiService } from '../gameapi.service.js';
 
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.css']
 })
+
+
 export class MainComponent implements OnInit {
 
   title = "Load Main Page"
 
-  constructor() {
+  constructor(private test: GameapiService) {
     this.loadScripts();
   }
 
 
   ngOnInit(): void {
+    console.log('main component');
+    this.test.testDialogflow().subscribe((res) => {
+      console.log('test dialogflow', res);
 
+    })
   }
 
   // Method to dynamically load JavaScript 
