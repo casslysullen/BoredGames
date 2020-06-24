@@ -153,7 +153,59 @@ footer{
 }
 
 
-@media only screen and (max-width: 767px) {}
+@media only screen and (max-width: 767px) {
+
+  h1 {
+    font-size: 30px;
+    font-family: 'VT323', monospace;
+    color: rgb(207, 19, 192);
+  }
+button {
+  background: rgb(207, 19, 192);
+  border-bottom: 6px inset rgba(0, 0, 0, .5);
+  border-left: 6px inset rgba(0, 0, 0, .5);
+  border-right: 6px inset rgba(255, 255, 255, .5);
+  border-top: px inset rgba(255, 255, 255, .5);
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 2.2rem;
+  margin: 1rem;
+  min-width: 30px;
+  padding: .5rem;
+  text-transform: uppercase;
+  width: auto;
+  font-family: 'VT323', monospace;
+  position: fixed;
+  right: 0;
+  top: 400px;
+}
+.bubble {
+  font-family: sans-serif;
+  font-size: 15px;
+  line-height: 22px;
+  width: 150px;
+  background: rgb(207, 19, 192);
+  border-radius: 37px;
+  top: 5px;
+  text-align: center;
+  color: #000;
+  font-family: 'VT323', monospace;
+  margin-left: 30%;
+  animation-duration: 5s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-fill-mode: both;
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+  animation-delay: 4s;
+  padding: 20px;
+  margin-top: 50%;
+}
+
+}
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {}
 
