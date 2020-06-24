@@ -22,3 +22,6 @@ app.get('/api/:term', function (req, res) {
 
   })
 })
+
+//find a route google will test to
+//tunnel from ngrok

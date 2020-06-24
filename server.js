@@ -55,6 +55,11 @@ app.get("/", (req, res) => {
   //   console.log('response from dialogflow', res);
   // })
   res.json('hi from server.js');
+
+});
+app.get("/trial", (req, res) => {
+  console.log('Trial Successful');
+  res.json('Got it');
 });
 
 app.listen(port, (req, res) => {
