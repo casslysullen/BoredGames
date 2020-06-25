@@ -128,5 +128,27 @@ iframe {
     font-size: 20px;
   }
 
+
  
 }
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  h1 {
+    padding: 10px;
+    display: list-item;
+    list-style-type: none;
+    font-family: 'VT323', monospace;
+  }
+  button {
+    font-size: 1.25rem;
+    min-width: 135px;
+    padding: .25rem;}
+
+
+  #content{
+      width: 650px;
+    }
+  
+  
+  }
