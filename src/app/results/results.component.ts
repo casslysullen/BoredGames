@@ -13,7 +13,7 @@ export class ResultsComponent implements OnInit {
   constructor(private pc: GameapiService, private activatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.pc.searchEntries(this.activatedRoute.params.data).subscribe((data) => {
+    this.pc.searchEntries(this.activatedRoute.params?.data).subscribe((data) => {
       this.details = data;
       console.log('data', data);
     })
