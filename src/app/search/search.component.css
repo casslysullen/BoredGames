@@ -107,6 +107,7 @@ iframe {
   display: none;
 }
 
+
 @keyframes slideMedia {
   0% {
     right: -200px;

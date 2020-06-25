@@ -5,9 +5,6 @@ const port = 3000;
 app.use(express.json());
 
 
-
-
-
 const dialogflow = require('dialogflow');
 const uuid = require('uuid');
 const projectId = 'boredgames-eonagp';
@@ -57,9 +54,21 @@ app.get("/", (req, res) => {
   res.json('hi from server.js');
 
 });
+
+app.get('https://www.giantbomb.com/api/games/?api_key=0e5c263be7a96b8df205c354017ca71730b176c5&format=json&field_list=name,image', (req, res) => {
+  console.log('API present');
+  res.json('Webhook notified');
+})
+
+
 app.get("/trial", (req, res) => {
   console.log('Trial Successful');
   res.json('Got it');
+});
+
+app.post("/trial", (req, res) => {
+  console.log('Made it to server');
+  res.json('Roger Roger');
 });
 
 app.listen(port, (req, res) => {
