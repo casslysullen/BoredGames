@@ -110,9 +110,9 @@ iframe {
 
   h1 {
     padding: 0 10px;
-    display: list-item;
     list-style-type: none;
-    font-family: VT323;
+    font-family: 'VT323', monospace;
+    font-size: larger;
   }
 
   #content {
@@ -125,6 +125,8 @@ iframe {
     padding: 30px 50px;
     color: yellowgreen;
     font-family: 'VT323', monospace;
-    font-size: xx-large;
+    font-size: 20px;
   }
+
+ 
 }

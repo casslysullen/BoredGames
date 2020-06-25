@@ -105,7 +105,14 @@ label {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) {}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .Bot {
+    width: 35%;
+    font-size: x-large;
+    margin-top: 14%;
+    margin-left: 50%;
+  }
+}
 
 @media only screen and (min-width: 1280px) {}
         
