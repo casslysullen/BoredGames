@@ -54,7 +54,8 @@
   overflow: hidden;
   padding: 30px 50px;
   color: yellowgreen;
-  font-family: 'VT323', monospace;
+
+
 }
 
 h1 {
@@ -85,9 +86,11 @@ button:hover {
   box-shadow: 0 5px 15px rgb(207, 19, 192);
 }
 
+
 iframe {
   display: hidden;
 }
+
 
 @keyframes STAR-MOVE {
   from {

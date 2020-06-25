@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { GameapiService } from '../gameapi.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-results',
@@ -7,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResultsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private pc: GameapiService, private activatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.pc.searchEntries(this.activatedRoute.params.data).subscribe((data) => {
+      console.log('data', data);
+    })
   }
-
 }

@@ -3,13 +3,17 @@
   <div id="midground"></div>
   <div id="foreground"></div>
   <div id="content">
-    <button routerLink=''>Home</button>
     <ul>
       <h1>Rank</h1>
       <h1>Score</h1>
       <h1>Name</h1>
       <h1>Title</h1>
     </ul>
+    <button routerLink=''>Home</button>
+  </div>
+
+  <div *ngFor="let stats of data">
+    {{stats.data}}
   </div>
 
 
