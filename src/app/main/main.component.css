@@ -182,15 +182,15 @@ iframe {
   }
 
   .bubble {
-   
+
     display: none;
   }
 
-  img{
+  img {
     display: none;
   }
 
- 
+
 }
 
 /*Ipad*/
@@ -199,9 +199,11 @@ iframe {
     font-size: 50px;
     margin-left: 23%;
   }
+
   img {
     padding-top: 100px;
   }
+
   .bubble {
     position: relative;
     font-size: 18px;
@@ -212,15 +214,11 @@ iframe {
     margin-left: 380px;
     margin-top: 10px;
   }
+
   .buttons {
     margin-top: 16%;
     margin-left: 33%;
   }
 }
 
-@media only screen and (min-width: 1280px) {
-  h1{font-size: 20px;
-  
-  }
-
-}
+@media only screen and (min-width: 1280px) {}
