@@ -54,13 +54,15 @@
   overflow: hidden;
   padding: 30px 50px;
   color: yellowgreen;
-  font-family: 'VT323', monospace;
-  font-size: xx-large;
+  
+  
 }
 
 h1 {
   display: inline;
   padding: 70px;
+  font-family: 'VT323', monospace;
+  font-size: 5em;
 }
 
 button {
@@ -79,9 +81,16 @@ button {
   color: greenyellow;
 }
 
+button:hover {
+    color: black;
+    box-shadow: 0 5px 15px rgb(207, 19, 192);
+}
+
+
 iframe {
   display: hidden;
 }
+
 
 @keyframes STAR-MOVE {
   from {
