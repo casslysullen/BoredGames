@@ -8,11 +8,13 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./results.component.css']
 })
 export class ResultsComponent implements OnInit {
+  details;
 
   constructor(private pc: GameapiService, private activatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.pc.searchEntries(this.activatedRoute.params.data).subscribe((data) => {
+      this.details = data;
       console.log('data', data);
     })
   }
