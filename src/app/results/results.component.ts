@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GameapiService } from '../gameapi.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Observable } from 'rxjs/Observable';
 
 @Component({
@@ -10,13 +10,19 @@ import { Observable } from 'rxjs/Observable';
 })
 export class ResultsComponent implements OnInit {
   details;
+  name;
 
-  constructor(private pc: GameapiService, private activatedRoute: ActivatedRoute) { }
+  constructor(private pc: GameapiService, private activatedRoute: ActivatedRoute, private route: Router) { }
 
   ngOnInit(): void {
-    this.pc.searchEntries(this.activatedRoute.params?.data).subscribe((data) => {
+    this.activatedRoute.queryParams.subscribe((params) => {
+      this.name = params['data'] ? params['data'] : null;
+    })
+    this.pc.searchEntries(this.name).subscribe((data) => {
       this.details = data;
       console.log('data', data);
     })
+
   }
 }
+

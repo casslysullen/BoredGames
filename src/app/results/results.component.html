@@ -17,10 +17,10 @@
 
     <mat-card>
       <mat-card-title>
-        {{details.results[0].name}}
+        {{details?.results[0].name}}
       </mat-card-title>
-      <img class='image' mat-card-image src="{{details.results[0].image.small_url}}">
-      <button mat-button><a href="{{details.results[0].sit_detail_url}}">More Details</a></button>
+      <img class='image' mat-card-image src="{{details?.results[0].image.small_url}}">
+      <button mat-button><a href="{{details?.results[0].site_detail_url}}">More Details</a></button>
     </mat-card>
   </div>
 

@@ -46,14 +46,11 @@ export class ChatDialogComponent implements OnInit {
             console.log('We have a match', games);
             const gamePicked = games.split('.');
             console.log('found it', gamePicked[0]);
-            this.router.navigate(['johnny5/results', { data: gamePicked[0] }])
+            this.router.navigate(['/johnny5/results'], { queryParams: { data: gamePicked[0] } })
           }
         })
       }
-
-
     })
-
   }
 
   sendMessage() {

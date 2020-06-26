@@ -1,26 +1,17 @@
 {
   "hosting": {
-<<<<<<< HEAD
-    "public": "public",
-=======
     "public": "dist/Wise",
->>>>>>> origin/quita
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
     ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
-    ]
-<<<<<<< HEAD
-=======
+    "rewrites": [{
+      "source": "**",
+      "destination": "/index.html"
+    }]
   },
   "database": {
     "rules": "database.rules.json"
->>>>>>> origin/quita
   }
 }

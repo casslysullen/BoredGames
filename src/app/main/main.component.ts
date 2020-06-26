@@ -18,11 +18,6 @@ export class MainComponent implements OnInit {
 
 
   ngOnInit(): void {
-    console.log('main component');
-    this.test.testDialogflow().subscribe((res) => {
-      console.log('test dialogflow', res);
-
-    })
   }
 
   // Method to dynamically load JavaScript 
