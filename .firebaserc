@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "boredgames-eonagp"
+  },
+  "targets": {
+    "boredgames-5db27": {
+      "hosting": {
+        "Wise": [
+          "boredgames-5db27"
+        ]
+      }
+    }
   }
 }
