@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 body {
   height: 100vh;
+  background: black url('./assets/background.png') repeat 5% 5%;
 }
 
 router-outlet~* {
@@ -8,6 +9,3 @@ router-outlet~* {
   height: 150%;
   width: 100%;
 }
-
-/*html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }*/
