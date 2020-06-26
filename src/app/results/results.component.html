@@ -6,15 +6,6 @@
     <div class="home">
       <button routerLink=''>Home</button>
     </div>
-    <div>
-      <ul>
-        <h1>Rank</h1>
-        <h1>Score</h1>
-        <h1>Name</h1>
-        <h1>Title</h1>
-      </ul>
-    </div>
-
     <mat-card>
       <mat-card-title>
         {{details?.results[0].name}}
@@ -23,6 +14,8 @@
       <button mat-button><a href="{{details?.results[0].site_detail_url}}">More Details</a></button>
     </mat-card>
   </div>
+
+
 
 
   <div class='soundcloud'>

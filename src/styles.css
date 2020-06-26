@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 body {
   height: 100vh;
+  background: black url('./assets/background.png') repeat 5% 5%;
 }
 
 router-outlet~* {
